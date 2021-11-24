@@ -1,19 +1,21 @@
-import logo from './assets/iconoNotes.png';
-import botonSalir from './assets/botonSalir.png';
+import React from 'react';
+import Logo from './assets/postitIcon.png'
+import Title from './components/Title'
+import LinkForm from './components/LinkForm';
 import './App.css';
 
+
 export default function App() {
+  
+  
   return (
     <div className="App">
         <header className="App-header">
-          <img src={ logo } className="App-logo" alt="logo" />
-          <h1>Bell Notes </h1>
-          <div id="botones">
-          <img src={ botonSalir } className="botonSalir" />
+          <img src={ Logo } className="App-logo" alt="logo" />            
+          <Title/>
+          <div>
+            <LinkForm/>
           </div>
-          <textarea placeholder= "Escribe tu nota aquí" id="publicacion"></textarea>
-          <buton id="botonEnviar"> Enviar</buton>
-
         </header>
       </div>
   );
