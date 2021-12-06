@@ -1,23 +1,19 @@
 import React from 'react';
-import Logo from './assets/postitIcon.png'
-import Title from './components/Title'
-import LinkForm from './components/LinkForm';
-import './App.css';
+import { Routes, Route, BrowserRouter } from 'react-router-dom';
+import Home from './components/Home';
+import Login from './components/Login';
+import Salir from './components/Salir';
+import App from './App.css'
 
 
-export default function App() {
-  
-  
-  return (
-    <div className="App">
-        <header className="App-header">
-          <img src={ Logo } className="App-logo" alt="logo" />            
-          <Title/>
-          <div>
-            <LinkForm/>
-          </div>
-        </header>
-      </div>
-  );
-}
+const App = () => (
+  <BrowserRouter>
+    <Routes>
+      <Route path="/" element={<Home />} />
+      <Route path="/login" element={<Login />} />
+      <Route path="/salir" element={<Salir />} />
+    </Routes>
+  </BrowserRouter>
+);
 
+export default App;
