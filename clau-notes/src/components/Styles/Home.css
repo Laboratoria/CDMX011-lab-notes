@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Manjari:wght@100;400;700&display=swap');
+
+:root {
+    --font :'Manjari', sans-serif;
+}
+
+.containerHome {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #61A6AB;
+  font-family: var(--font);
+}
+.headerHome {
+  background: rgba(39, 70, 72, 0.25);
+  height: 10vh;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+.btnSignup,
+.btnLogin {
+  width: 15vmin;
+  height: 4.5vmin;
+  background: #F7B9A1;
+  border-radius: 5px;
+  border: 1px solid #1B2B40;
+  font-weight: 500;
+  font-size: 2.3vmin;
+  border: none;
+  cursor: pointer;
+  align-items: center;
+  margin-top: 2vw;
+}
+.btnSignup {
+  margin-left: 25vmin;
+}
+.btnLogin {
+  margin-right: 10vmin;
+}
+.imgLogo{
+  width: 300px;
+  margin-left: 3vmin;
+}
+.homeText{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 150px;
+
+}
+.box1{
+  width: 750px;
+  margin-bottom: 100px;
+  transition: transform 1s;
+}
+
+.box2{
+  width: 600px;
+  margin-left: 200px;
+  transform: rotate(10deg);
+  transition: transform 1s;
+}
+
+/* .box2:hover{
+  transform: rotate(5deg);
+}
+.box1:hover{
+  transform: rotate(-5deg);
+} */
+.btnLogin:hover{
+  background:#CE9681;
+}
+
+.btnSignup:hover{
+  background:#CE9681;
+}
